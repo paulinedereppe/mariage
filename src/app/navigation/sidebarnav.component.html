@@ -1,0 +1,36 @@
+<mat-nav-list>
+    <!--accueil-->
+    <a mat-list-item routerLink="/home" (click)="onSidenavClose()">
+        <mat-icon>home</mat-icon> <span class="nav-caption">Accueil</span>
+    </a>
+    <!--tables / à l'affiche-->
+    <a mat-list-item routerLink="/cinema" (click)="onSidenavClose()">
+        <mat-icon>theaters</mat-icon> <span class="nav-caption">A l'affiche</span>   
+    </a>
+    <!--lieu-->
+    <a mat-list-item routerLink="/location" (click)="onSidenavClose()">
+        <mat-icon>location_on</mat-icon><span class="nav-caption">Lieu</span>
+    </a>
+    <!-- contact -->
+    <a mat-list-item routerLink="/contactus" (click)="onSidenavClose()">
+        <mat-icon>perm_phone_msg</mat-icon><span class="nav-caption">Nous contacter</span>
+    </a>
+    <!--aides-->
+    <div class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <mat-icon>help</mat-icon><span class="nav-caption">Aides pour les Sudistes</span>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <!-- se loger -->
+          <li><a class="dropdown-item" href="/hotel"><mat-icon>hotel</mat-icon>Se loger</a></li>
+            <!-- se nourrir -->
+          <li><a class="dropdown-item" href="/restaurant"><mat-icon>restaurant</mat-icon>Où manger?</a></li>
+             <!-- se déplacer -->
+          <li><a class="dropdown-item" href="/train"><mat-icon>train</mat-icon>Se déplacer</a></li>
+            <!-- que faire?-->
+            <li><a class="dropdown-item" href="/activity"><mat-icon>weekend</mat-icon>Que faire?</a></li>
+
+        </ul>
+    </div>
+    
+  </mat-nav-list>

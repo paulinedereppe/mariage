@@ -1,0 +1,91 @@
+
+<!--div>
+    <form >
+        <div>
+            <label class="label required">Email</label>
+            <input type="email">
+        </div>
+        <div class="dropdown-select-input">
+            <label>Type de demande</label>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="col-12">
+            <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+    </form>
+</div-->
+<div>
+    <p>
+        <h3>Contactez-nous:</h3>    
+    <p>
+        <h4>Par courrier au:</h4>
+        Thomas Vidal et Pauline Dereppe
+        <br>15 Résidences Les Saules,
+        <br>59246 Mons-en-Pévèle
+    <p>
+        <h4>Par mail:</h4>
+         Pauline: dereppe.pauline@hotmail.fr
+        <br> Thomas: maestrov2013@yahoo.fr
+        <br>
+    </div>
+<div>
+    <h3>Ou envoyez-nous un message via le formulaire!</h3>
+    <form novalidate [formGroup]="feedbackForm" #fform="ngForm" (ngSubmit)="onSubmit()">
+        <p>
+        <mat-form-field class="half-size">
+            <label>Prénom</label>
+            <mat-error *ngIf="formErrors.firstname">{{formErrors.firstname}}</mat-error>
+            <input class="form-control" matInput formControlName="firstname" type="text" required>
+        </mat-form-field>
+        <mat-form-field class="half-size">
+            <label>Nom</label>
+            <input class="form-control" matInput formControlName="lastname" type="text" required>
+            <mat-error *ngIf="formErrors.lastname">{{formErrors.lastname}}</mat-error>
+        </mat-form-field>
+        </p>
+        <p>
+        <mat-form-field class="half-size">
+            <label>Téléphone</label>
+            <mat-error *ngIf="formErrors.telnum">{{formErrors.telnum}}</mat-error>
+            <input  class="form-control" matInput formControlName="telnum"  required>
+        </mat-form-field>
+        <mat-form-field class="half-size">
+            <label>email</label>
+            <input class="form-control" matInput formControlName="email"  type="email" email required>
+            <mat-error *ngIf="formErrors.email">{{formErrors.email}}</mat-error>
+        </mat-form-field>        
+        </p>
+        <p>
+            <label>Sujet</label>
+            <select class="form-select" formControlName="sujet" aria-label="Default select example">
+                <option selected>Choisir votre sujet</option>
+                <option value="Participation">Participation</option>
+                <option value="Help">Besoin d'aide/d'un conseil</option>
+                <option value="Place/table">Réservation de table/Regroupement</option>
+              </select>
+          </p>
+        <p>
+            <mat-form-field class="full-size">
+                <label>Message</label>
+              <textarea class="form-control-area" matInput formControlName="message" rows=12 required></textarea>
+              <mat-error *ngIf="formErrors.message">{{formErrors.message}}</mat-error>
+
+            </mat-form-field>
+          </p>
+          
+          <p>
+          <button type="submit" mat-button class="background-primary text-floral-white" [disabled]="feedbackForm.invalid">Envoyer</button>
+            </p>
+    </form>
+</div>
+
+  

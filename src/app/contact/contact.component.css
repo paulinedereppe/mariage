@@ -1,0 +1,28 @@
+.form-control, .form-select{
+    border: 1px solid gray;
+    height:4.5vh;
+}
+.form-select{
+    width:85vw;
+}
+mat-form-field.half-size{
+    width:40vw;
+    margin-right: 5vw;
+    margin-bottom: 2vh;
+}
+mat-form-field.full-size{
+    width:85vw;
+    margin-right: 5vw;
+    margin-bottom: 2vh;
+}
+.form-control-area{
+    height: 30vh;
+    border: 1px solid gray;
+}
+
+#basic-addon1{
+    width:5vw
+}
+div{
+    margin-left:3vw;
+}

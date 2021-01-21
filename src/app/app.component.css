@@ -1,0 +1,40 @@
+mat-sidenav-container, mat-sidenav-content, mat-sidenav {
+    height: 100%;
+}
+mat-sidenav {
+    width: 250px;
+}
+#container{
+    display:inline-block;
+    clear:both;
+    width:100vw;
+    height:99vh;  
+}
+.content{
+    overflow:auto;
+    float: right;
+    position:absolute;
+    margin-bottom: 0vh;
+    padding-top:5vh;
+    padding-right:3vw;
+    padding-left:3vw;
+    width:99%;
+    height:85vh;
+}
+.footer{
+    bottom:0;
+    position:absolute;
+    overflow:hidden;
+    width:100vw;
+    height:5vh;
+    margin-top:0vh;
+    margin-bottom:0vh;
+    background-color: black;
+}
+.header{
+    width:100vw;
+    margin-top: 0vh;
+}
+
+
+

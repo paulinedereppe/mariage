@@ -1,0 +1,13 @@
+.image{
+    align-content: center;
+    margin-left:10vw;
+    margin-right:10vw;
+    text-align: center;
+}
+img{
+    border:solid 1px black;
+    max-height:70vh;
+    max-width:70vw;
+    margin-top:5vh;
+    
+}

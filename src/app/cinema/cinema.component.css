@@ -1,0 +1,25 @@
+mat-card{
+    width:90vw;
+    max-height: 63vh;
+    margin-right:0;
+
+}
+img{
+    max-height:90%;    
+    max-width:25vw;
+}
+.left,.right{
+    top:0;
+}
+.left{
+    left:0;
+}
+.right{
+    right:0;
+    max-width:50vwvw;
+    padding-left:2vw;
+    overflow:auto;
+    max-height:55vh;
+    text-align: justify;
+
+}

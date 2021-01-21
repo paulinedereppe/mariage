@@ -1,0 +1,18 @@
+      <div *ngFor="let film of films">
+        <mat-card >
+            <h3> Salle {{film.salle}} : {{film.name}}</h3>
+            
+            <div fxLayout="row">
+                <div class="left">
+                    <h4>{{film.statut}}</h4>
+                    <img src="http://localhost:3000/{{film.image}}" alt={{film.alt}}>
+                </div>
+                <div class="right">
+                    <h4>Description</h4>
+                    <br>{{film.description}}
+                </div>
+            </div>
+        </mat-card>
+      </div>
+
+     

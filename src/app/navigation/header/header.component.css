@@ -1,0 +1,33 @@
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover, a:active{
+    color: lightgray;
+}
+.navigation-items{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+mat-toolbar{
+    background-color: #fbcb04;
+    display: inline-flex;
+    overflow:hidden;
+    height:10vh;
+}
+
+#search{
+    max-width: 30rem;
+    margin-right: 5%;
+}
+#logo{
+    top:0;
+    max-height:100%
+    
+}
+img{
+    width:auto;
+    max-height:10vh;
+    top:0;
+}

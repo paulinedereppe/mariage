@@ -1,0 +1,15 @@
+.main-footer{
+    background-color: rgb(59, 59, 59);
+    overflow:hidden;
+}
+p{
+    text-align: center;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover, a:active{
+    color: lightgray;
+}

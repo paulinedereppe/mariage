@@ -1,0 +1,50 @@
+<!--div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <mat-card >
+            <h3> Salle {{films[i].salle}} : {{films[i].name}}</h3>
+            
+            <div fxLayout="row">
+                <div class="left">
+                    <h4>{{films[0].statut}}</h4>
+                    <img src="http://localhost:3000/{{films[0].image}}" alt={{films[0].alt}}>
+                </div>
+                <div class="right">
+                    <h4>Description</h4>
+                    <br>{{films[0].description}}
+                </div>
+            </div>
+        </mat-card>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000" ngFor="film of films">
+        <mat-card >
+            <h3> Salle {{films.salle}} : {{films.name}}</h3>
+            
+            <div fxLayout="row">
+                <div class="left">
+                    <h4>{{films.statut}}</h4>
+                    <img src="http://localhost:3000/{{films.image}}" alt={{films.alt}}>
+                </div>
+                <div class="right">
+                    <h4>Description</h4>
+                    <br>{{films.description}}
+                </div>
+            </div>
+        </mat-card>
+      </div>
+    </div>
+    <div class="carousel-control-prev"  role="button" data-bs-slide="prev">
+        <button (click)="goPrev()" mat-button></button>
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </div>
+
+    <a class="carousel-control-next"  role="button" data-bs-slide="next">
+        <button (click)="goNext()" mat-button></button>
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </a>
+  </div-->
