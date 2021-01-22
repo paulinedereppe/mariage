@@ -30,6 +30,8 @@
           },
           "configurations": {
             "production": {
+              "baseHref":"/",
+              "deployUrl":"https://paulinedereppe.github.io/ui-assets-agm",
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
