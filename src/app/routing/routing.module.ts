@@ -9,10 +9,12 @@ import { HotelComponent } from '../help/hotel/hotel.component';
 import { RestaurantComponent } from '../help/restaurant/restaurant.component';
 import { TransportComponent } from '../help/transport/transport.component';
 import { ActivityComponent } from '../help/activity/activity.component';
+import { FilmDetailsComponent } from '../film-details/film-details.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent},
   { path: 'cinema', component: CinemaComponent},
+  { path: 'film', component:FilmDetailsComponent},
   { path: 'location', component: LocationComponent},
   { path: 'contactus', component: ContactComponent},
   { path: 'hotel', component: HotelComponent},

@@ -11,15 +11,18 @@ import {Films} from '../shared/Films';
   providedIn: 'root'
 })
 export class FilmService {
-
+  film:Film
   films:Film[];
+  results:Film[];
   constructor(private http: HttpClient,
-    private processHttpMsgService:ProcessHttpmsgService) { }
+    private processHttpMsgService:ProcessHttpmsgService) { 
+      this.results= [];
+    }
     
-
-
-    getFilm(id:string):Observable<Film>{
-      return this.http.get<Film>(BaseURL+`films/`+id)
+    
+    getFilm(id:Number):Observable<Film>{
+      console.log(BaseURL+'films/'+id.toString())
+      return this.http.get<Film>(BaseURL+`films/`+id.toString())
       .pipe(catchError(this.processHttpMsgService.handleError));
     }
 
@@ -28,7 +31,7 @@ export class FilmService {
       .pipe(catchError(this.processHttpMsgService.handleError));
     }
 
-    getFilmIds():Observable<String[] | any>{
+    getFilmIds():Observable<Number[] | any>{
       return this.getFilms().pipe(map(films=>films.map(films=>films.id)))
       .pipe(catchError(this.processHttpMsgService.handleError));
     }

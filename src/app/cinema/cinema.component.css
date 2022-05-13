@@ -5,8 +5,8 @@ mat-card{
 
 }
 img{
-    max-height:90%;    
-    max-width:25vw;
+    max-height:80%;    
+    max-width:20vw;
 }
 .left,.right{
     top:0;
@@ -16,7 +16,7 @@ img{
 }
 .right{
     right:0;
-    max-width:50vwvw;
+    max-width:20vwvw;
     padding-left:2vw;
     overflow:auto;
     max-height:55vh;

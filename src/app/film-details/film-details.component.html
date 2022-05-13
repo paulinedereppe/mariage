@@ -21,18 +21,19 @@
       </div>
       <div class="carousel-item" data-bs-interval="2000" ngFor="film of films">
         <mat-card >
-            <h3> Salle {{films.salle}} : {{films.name}}</h3>
+            <h3> Salle {{film.salle}} : {{film.name}}</h3>
             
             <div fxLayout="row">
                 <div class="left">
-                    <h4>{{films.statut}}</h4>
-                    <img src="http://localhost:3000/{{films.image}}" alt={{films.alt}}>
+                    <h4>{{film.statut}}</h4>
+                    <img src="http://localhost:3000/{{film.image}}" alt={{film.alt}}>
                 </div>
                 <div class="right">
                     <h4>Description</h4>
-                    <br>{{films.description}}
+                    <br>{{film.description}}
                 </div>
             </div>
+          
         </mat-card>
       </div>
     </div>
